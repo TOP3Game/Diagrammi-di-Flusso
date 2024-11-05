@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow1"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 02:37:07 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTI5OzAyOjIwOjUzIEFNOzIxMDc="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTI5OzAyOjM3OjA3IEFNOzU7MjIyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="analogPIN" type="String" array="False" size=""/>
+            <declare name="livelli, LED, ledlevel" type="Integer" array="False" size=""/>
+            <declare name="pinmodePOT, pinmodeLED" type="Boolean" array="False" size=""/>
+            <output expression="&quot;A quale pin vuoi attacare il potenziometro&quot;" newline="True"/>
+            <input variable="analogPIN"/>
+            <output expression="&quot;Digita TRUE per modalit&#224; OUTPUT, FALSE per modalit&#224; INPUT&quot;" newline="True"/>
+            <input variable="pinmodePOT"/>
+            <output expression="&quot;A quale pin vuoi attacare il LED&quot;" newline="True"/>
+            <input variable="LED"/>
+            <output expression="&quot;Digita TRUE per modalit&#224; OUTPUT, FALSE per modalit&#224; INPUT&quot;" newline="True"/>
+            <input variable="pinmodeLED"/>
+            <while expression="1==1">
+                <output expression="&quot;Digita numero di livelli fra 0 e 1023&quot;" newline="True"/>
+                <input variable="livelli"/>
+                <assign variable="ledlevel" expression="livelli"/>
+                <output expression="ledlevel" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

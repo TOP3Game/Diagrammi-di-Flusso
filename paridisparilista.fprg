@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="paridisparilista"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-17 03:35:18 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTE3OzAzOjE4OjM1IEFNOzIxMTI="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTE3OzAzOjM1OjE4IEFNOzE7MjIyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista" type="Integer" array="True" size="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dammi 3 valori della lista&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="lista[i]" newline="True"/>
+                <if expression="lista[i]%2=0">
+                    <then>
+                        <output expression="&quot;&#232; pari&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;&#232; dispari&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

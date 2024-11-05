@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="canzonescelta"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 01:34:26 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTIyOzAxOjIyOjI3IEFNOzIxMDI="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTIyOzAxOjM0OjI2IEFNOzI7MjIxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="scelta, canzone1, canzone2" type="String" array="False" size=""/>
+            <assign variable="canzone1" expression="&quot;chiara dice che mi adora&quot;"/>
+            <assign variable="canzone2" expression="&quot;lo sto facendo in strada e lo piccio senza cappuccio&quot;"/>
+            <output expression="&quot;Ciao dimmi la canzone di cui vuoi il testo&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta==&quot;chiara&quot;">
+                <then>
+                    <output expression="canzone1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;apparechiato&quot;">
+                        <then>
+                            <output expression="canzone2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Fuck you man&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

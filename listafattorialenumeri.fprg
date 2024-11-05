@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="listafattorialenumeri"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 02:40:31 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTE4OzAyOjMxOjI2IEFNOzIxMDc="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTE4OzAyOjMxOjI3IEFNOzE7bmlrb2w7TklLTzsyMDI0LTEwLTE4OzAyOjIxOjQwIEFNO2ZhdHRvcmlhbGUgZGkgdW4gbnVtZXJvLmZwcmc7NzE3MA=="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTE4OzAyOjQwOjMxIEFNOzE7MjIxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista" type="Integer" array="True" size="3"/>
+            <declare name="i, k, risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="1"/>
+            <output expression="&quot;Dammi il numero del quale vuoi il fattoriale&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+                <for variable="k" start="1" end="lista[i]" direction="inc" step="1">
+                    <assign variable="risultato" expression="risultato*k"/>
+                    <output expression="risultato" newline="True"/>
+                </for>
+                <assign variable="risultato" expression="1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

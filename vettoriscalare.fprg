@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vettoriscalare"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 01:20:32 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTIyOzAxOjA2OjAxIEFNOzIwOTY="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTIyOzAxOjIwOjMyIEFNOzE7MjIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista1, lista2" type="Integer" array="True" size="3"/>
+            <declare name="i, risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="0"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;componente vettore 1&quot;" newline="True"/>
+                <input variable="lista1[i]"/>
+                <output expression="&quot;componente vettore 2&quot;" newline="True"/>
+                <input variable="lista2[i]"/>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="risultato" expression="risultato + lista1[i]*lista2[i]"/>
+            </for>
+            <output expression="risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

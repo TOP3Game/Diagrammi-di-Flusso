@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="listaq"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 02:21:16 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTE4OzAyOjEwOjA0IEFNOzIxMDA="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTE4OzAyOjIxOjE2IEFNOzE7MjIxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista, quadrati" type="Integer" array="True" size="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ciao, sono vicino a te, calcolo i quadrati. Dammi 3 numeri&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+            </for>
+            <output expression="&quot;calcolo i quadrati&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="quadrati[i]" expression="lista[i]^2"/>
+                <output expression="&quot;il numero della lista &#232;&quot;" newline="True"/>
+                <output expression="lista[i]" newline="True"/>
+                <output expression="&quot;Il suo quadrato &#232;:&quot;" newline="True"/>
+                <output expression="quadrati[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

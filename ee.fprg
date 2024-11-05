@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ee"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 03:21:07 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTI5OzAyOjQyOjA2IEFNOzIxMDk="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTI5OzAzOjIxOjA3IEFNOzE7MjIxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ledcount, pin1, pin2, pin3, analogPIN, livelli" type="Integer" array="False" size=""/>
+            <declare name="pinmode1, pinmode2, pinmode3" type="Boolean" array="False" size=""/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;Dimmi PIM&quot;" newline="True"/>
+                <input variable="ledPins[i]"/>
+            </for>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <input variable="e"/>
+            </for>
+            <while expression="1==1">
+                <output expression="&quot;Dimmi il livello corrispondente del potenziometro&quot;" newline="True"/>
+                <input variable="livelli"/>
+                <assign variable="ledlevel" expression="livelli*ledcount/1023"/>
+                <for variable="i" start="0" end="ledcount+1" direction="inc" step="1">
+                    <if expression="i&lt;ledlevel">
+                        <then>
+                            <assign variable="ledPins[i]" expression="false"/>
+                        </then>
+                        <else>
+                            <assign variable="ledPins[i]" expression="true"/>
+                        </else>
+                    </if>
+                </for>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="controllonumero"/>
+        <attribute name="authors" value="nikol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-17 03:17:48 AM"/>
+        <attribute name="created" value="bmlrb2w7TklLTzsyMDI0LTEwLTE3OzAzOjAzOjU4IEFNOzIxMTE="/>
+        <attribute name="edited" value="bmlrb2w7TklLTzsyMDI0LTEwLTE3OzAzOjE3OjQ4IEFNOzE7MjIyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dammi un numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&gt;0">
+                <then>
+                    <output expression="&quot;il numero &#232; maggiore di 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero==0">
+                        <then>
+                            <output expression="&quot;il numero &#232; 0&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;il numero &#232; minore di 0&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="abs (numero)%2=0">
+                <then>
+                    <output expression="&quot;il numero &#232; pari&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;il numero &#232; dispari&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
